@@ -61,7 +61,8 @@ function Home() {
                 </label>
                 <button 
                  onClick={handleSubmit}
-                disabled={!selectedFile} className='bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 disabled:bg-gray-400 disabled:pointer-events-none duration-300'>Convert File</button>
+                disabled={!selectedFile} className='bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 disabled:bg-gray-400 disabled:pointer-events-none duration-300'>Convert File
+                </button>
                 {convert && (<div className='text-green-500 text-center'>{convert}</div>) }
                 {downloadError && (<div className='text-red-500 text-center'>{downloadError}</div>) }
             </div>
